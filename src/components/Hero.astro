@@ -1,0 +1,31 @@
+---
+const personalImageAlt = "Miguel Ángel"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import SocialPill from "@/components/SocialPill.astro"
+import GitHub from "./icons/GitHub.astro"
+---
+
+<div class="max-w-xl">
+
+  <h1
+    class="text-4xl font-bold tracking-tigh bg-gradient-to-r from-violet-700   to-violet-300 bg-clip-text text-transparent"
+  >
+    Alejandro Molinero
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-violet-400 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+  Desarrollador de Software <strong>Junior.</strong> 
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="https://www.linkedin.com/in/alex-moli/">
+      <LinkedInIcon />
+    </SocialPill>
+    <SocialPill href="https://github.com/ELmoliii/ELmoliii">
+      <GitHub>
+        GitHub
+      </GitHub>
+    </SocialPill>
+   
+  </nav>
+</div>

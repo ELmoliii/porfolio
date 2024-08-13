@@ -1,0 +1,42 @@
+---
+import ExperienceItem from "./EducationItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "2024",
+    title: "Grado Superior DAM",
+    company: "IES Luis Braille",
+    description:
+      "Administrar y mantener bases de datos, asegurando integridad, consistencia y accesibilidad y Crear aplicaciones que funcionen en diferentes sistemas y accedan a bases de datos.",
+  },
+  {
+    date: "2022",
+    title: "Grado medio SMR",
+    company: "IES Palomeras Vallecas",
+    description:
+      "Diagnosticar disfunciones en sistemas microinformáticos y redes mediante pruebas funcionales Instalar, configurar y mantener servicios multiusuario, aplicaciones y dispositivos compartidos en un entorno de red local.",
+  },
+  {
+    date: "2022",
+    title: "Tecnico de Apple",
+    company: "Apple",
+    description:
+      "Formación integral en el ecosistema Apple incluyendo productos, software, servicios y herramientas de soporte técnico.",
+  },  { 
+    date: "2020",
+    title: "Redes",
+    company: "Microforum",
+    description:
+      "Técnico de servicio de Apple encargado de reparar, mantener, actualizar y asesorar sobre el hardware y software de los dispositivos de la Empresa.",
+  }, 
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
